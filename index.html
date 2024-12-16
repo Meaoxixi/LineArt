@@ -1,0 +1,467 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Lineart</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/pano.css">
+
+  <link rel="stylesheet" href="static/css/Thetitle.css">
+
+  <script src="https://kit.fontawesome.com/d814472bd3.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+<!--            <h1 class="title is-2 publication-title"></h1>-->
+            <h1 id="title" class="title is-2 publication-title">
+              🎨<span>LineArt:</span><br>
+              A Knowledge-guided Training-free High-quality Appearance Transfer
+              for Design Drawing with Diffusion Model
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://meaoxixi.github.io/about/" target="_blank">Xi Wang</a><sup>1</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.keika.world/about/" target="_blank">Hongzhen Li</a><sup>1</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.kth.se/profile/hfang" target="_blank">Heng Fang</a><sup>2</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://sites.google.com/view/yichen-peng/home" target="_blank">Yichen Peng</a><sup>3</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.jaist.ac.jp/~xie/" target="_blank">Haoran Xie</a><sup>4</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://keepthinkingyx.github.io/Xi-Yang/" target="_blank">Xi Yang*</a><sup>1</sup>,</span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://gujisuo.jlu.edu.cn/info/1032/1156.htm" target="_blank">Chuntao Li</a><sup>1</sup>,</span>
+            </div>
+
+            <br>
+              <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>Jilin University</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block"><sup>2</sup>KTH Royal Institute of Technology</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block"><sup>3</sup>Tokyo Institute of Technology</span>
+                  <span class="author-block"><sup>4</sup>Japan Advanced Institute of Science and Technology (JAIST)</span>
+              </div>
+
+              <div class="image-container">
+                  <img src="static/images/JLU.jpg" alt="Image 1">
+                  <img src="static/images/KTH.png" alt="Image 2">
+                  <img src="static/images/Tokyo_Institute_of_Technology.png" alt="Image 3">
+                  <img src="static/images/jaist.png" alt="Image 4">
+              </div>
+
+
+              <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                      <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                    <a href="https://github.com" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa-solid fa-images"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                    <a href="https://huggingface.com" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                     <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                    <span>Demo(Coming soon)</span>
+                  </a>
+                </span>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser-->
+<section class="hero teaser">
+<div class="container">           <!--  不是<div class="container is-max-desktop">  -->
+    <div class="hero-body">
+        <img src="./static/images/teaser.png" style="width: 100%" alt="Teaser Image">
+        <h2 class="subtitle has-text-centered" style="font-size: 125%; font-weight: bold; line-height: 1.2;">
+          Our work use design drawings and reference photos to generate corresponding results
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
+
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container">
+              <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-1">
+                      <img id="1" , width="30%" , src="./static/images/gif1.gif" alt="">
+                  </div>
+                  <div class="item item-2">
+                      <img id="2" , width="30%" , src="./static/images/gif2.gif" alt="">
+                  </div>
+                  <div class="item item-3">
+                      <img id="3" , width="30%" , src="./static/images/gif3.gif" alt="">
+                  </div>
+                  <div class="item item-4">
+                      <img id="4", width="30%", src="./static/images/gif4.gif" alt="">
+                  </div>
+                  <div class="item item-5">
+                      <img id="5", width="30%", src="./static/images/gif5.gif" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              Image rendering from line drawings is vital in design and image generation technologies reduce costs, yet professional line drawings demand preserving complex details. Text prompts struggle with accuracy, and image translation struggles with consistency and fine-grained control. We present  LineArt, a framework that transfers complex appearance onto detailed design drawings, facilitating design and artistic creation. It generates high-fidelity appearance while preserving structural accuracy by simulating hierarchical visual cognition and integrating human artistic experience to guide the diffusion process. LineArt overcomes the limitations of current methods in terms of difficulty in fine-grained control and style degradation in design drawings. It requires no precise 3D modeling, physical property specs, or network training, making it more convenient for design tasks. LineArt consists of two stages: a multi-frequency lines fusion module to supplement the input design drawing with detailed structural information and a two-part painting process for Base Layer Shaping and Surface Layer Coloring. We also present a new design drawing dataset ProLines for evaluation. The experiments show that LineArt performs better in accuracy, realism, and material precision compared to SOTAs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!--&lt;!&ndash; Image carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End image carousel &ndash;&gt;-->
+
+  <!-- Method -->
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h2 class="title is-3 has-text-centered">Method</h2><br>
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+
+                      <img src="static/images/Method.png" alt="Method Overview"/><br>
+                      <div class="content has-text-justified">
+                          <p>
+                              <strong style="font-size: 1.2em;">Our Workflow:</strong>
+                              The process begins with a design drawing L<sub>original</sub> and an appearance image I<sub>appearance</sub>.
+                              Depth-based ControlNet estimates depth and generates soft edges to guide the synthesis.
+                              <strong>(a) The Multi-frequency Line Fusion</strong> module employs assertion-guided techniques to enhance structural detail control.
+                              <strong>(b) Base Layer Shaping</strong> decomposes the illumination of the appearance image using a multi-scale retinex approach, generating retinex illumination layers L<sub>retinex</sub> to balance brightness.
+                              <strong>(c) Surface Layer Coloring</strong> refines the output by utilizing layout and style blocks in a U-net with cross-attention for accurate material embedding.
+                          </p>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  <!-- End Method -->
+<br><br>
+
+  <!-- Dataset -->
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container">
+              <h2 class="title is-3 has-text-centered">ProLine Dataset</h2><br>
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+
+                      <img src="static/images/dataset.png" alt="dataset"/><br><br>
+                      <div class="content has-text-justified">
+                          <p>
+                              <strong style="font-size: 1.2em;">Construction of ProLine Dataset:</strong>
+                              (b) shows an overview of the data after the initial screening based on image complexity and manual removal of noise data.
+                              (c) shows the data preprocessing of the selected data, including the automatic processing process of mask and three rounds of manual verification.
+                              After (b)(c) two processes, we obtained 5101 precious line drawings.
+                          </p>
+                      </div>
+                      <img src="static/images/proline.png" alt="proline"/><br>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  <!-- End Dataset -->
+
+<!-- Gallery -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+      <div class="container">
+          <h2 class="title is-3 has-text-centered">Result Gallery</h2><br>
+          <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+              <div class="container-iframes">
+                  <iframe frameborder="0" class="juxtapose" width="500" height="500" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=e66d56d6-b82a-11ef-9397-d93975fe8866"></iframe>
+                  <iframe frameborder="1" class="juxtapose" width="500" height="500" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=11c344d0-b82b-11ef-9397-d93975fe8866"></iframe>
+                  <iframe frameborder="2" class="juxtapose" width="500" height="500" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=1f1412d6-b82b-11ef-9397-d93975fe8866"></iframe>
+              </div>
+          </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+<!-- End Gallery -->
+
+
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+
+
+
+
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+<!--&lt;!&ndash;BibTex citation &ndash;&gt;-->
+<!--  <section class="hero is-small">-->
+<!--      <div class="hero-body">-->
+<!--          <div class="container">-->
+<!--              <h2 class="title is-3 has-text-centered">Paper</h2><br>-->
+<!--              <div class="columns is-centered has-text-centered">-->
+<!--                  <div class="column is-four-fifths">-->
+
+<!--                      <div class="paper-thumbnail">-->
+<!--                          <a href="https://arxiv.org/abs/2404.13263" target="_blank">-->
+<!--                                  <br>-->
+<!--                                  <img class="layered-paper-big" width="120%" src="static/images/paper.png" alt="Paper thumbnail."/>-->
+<!--                          </a>-->
+<!--                      </div>-->
+<!--                      <div class="paper-info">-->
+<!--                          <h4>FilterPrompt: A Simple yet Efficient Approach to Guide Image Appearance Transfer in Diffusion Models</h4>-->
+<!--                          <h5>-->
+<!--                              Xi Wang, Yichen Peng, Heng Fang, Yilin Wang, Haoran Xie, Xi Yang and Chuntao Li-->
+<!--                          </h5>-->
+<!--                          <pre><code>-->
+<!--                            @misc{wang2024filterpromptsimpleefficientapproach,-->
+<!--                            title={FilterPrompt: A Simple yet Efficient Approach to Guide Image Appearance Transfer in Diffusion Models},-->
+<!--                            author={Xi Wang and Yichen Peng and Heng Fang and Yilin Wang and Haoran Xie and Xi Yang and Chuntao Li},-->
+<!--                            year={2024},-->
+<!--                            eprint={2404.13263},-->
+<!--                            archivePrefix={arXiv},-->
+<!--                            primaryClass={cs.CV},-->
+<!--                            url={https://arxiv.org/abs/2404.13263},-->
+<!--                        }-->
+<!--                        </code></pre>-->
+<!--                      </div>-->
+
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--      </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End BibTex citation &ndash;&gt;-->
+  <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>@article{,
+  author    = {},
+  title     = {},
+  journal   = {},
+  year      = {2024},
+}</code></pre>
+      </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
