@@ -25,15 +25,15 @@
 
 .paper-thumbnail {
     margin: 0 auto;
-    width: 40%;
-    max-width: 250px;
+    width: 80%;
+    max-width: 450px;
     display: inline-block;
     vertical-align: top;
     padding: 2% 10% 4% 0;
 }
 
 .paper-info {
-    width: 45%;
+    width: 51%;
     display: inline-block;
     vertical-align: top;
 }
@@ -64,6 +64,62 @@
     margin-left: 10px;
     margin-right: 45px;
 }
+
+pre {
+    overflow-x: auto;
+    text-align: left;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background: #eeeeee;
+    padding: 5px 5px 5px 10px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+}
+
+pre code {
+    text-align: left;
+    word-wrap: normal;
+    white-space: pre-wrap;
+
+}
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    background-color: #f5f5f5;
+    color: #4a4a4a;
+    font-size: .875em;
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+
+pre code {
+    background-color: transparent;
+    color: currentColor;
+    font-size: 1.25em;
+    padding: 0;
+}
+
+h4 {
+    text-align: left;
+    color: #515151;
+    font-size: 1.25em; /* 增大字号，可以根据需要调整 */
+    font-weight: bold; /* 加粗 */
+    font-family: 'Times New Roman', Times, serif; /* 设置字体为 Times New Roman */
+    margin-bottom: 15px; /* 增加下方间距，调整数值以满足需求 */
+}
+
+h5 {
+    text-align: left;
+    color: #515151;
+    font-weight: bold; /* 加粗 */
+    font-family: 'Times New Roman', Times, serif; /* 设置字体为 Times New Roman */
+    margin-bottom: 15px; /* 增加下方间距，调整数值以满足需求 */
+}
+
+
 .container-iframes {
     display: flex; /* 启用Flexbox布局 */
     justify-content: space-between; /* 子元素之间的间距平均分布 */
@@ -77,3 +133,5 @@
     width: calc(33.333% - 10px); /* 减去外边距的宽度 */
     height: 300px; /* 设置iframe的高度 */
 }
+
+
